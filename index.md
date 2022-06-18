@@ -23,8 +23,8 @@
 		 <br>
 		 <br>
 		 <h1 style="color:white">Gopikrishnan Chirappurathu Remesan</h1>
-         <h3 style="font-weight:normal;line-height:10px;color:white">Institute Post-Doctoral Fellow </h3>
-		 <h3 style="font-weight:normal;line-height:5px;color:white">Indian Institute of Technology Bombay (Mumbai, India) </h3>
+         <h3 style="font-weight:normal;line-height:10px;color:white">Posdoctoral Research Fellow</h3>
+		 <h3 style="font-weight:normal;line-height:5px;color:white">Università degli Studi di Milano, Italy</h3>
        </div>
       <!------------------------------------------------------------------------------>
       <!-- Body                                                                     --> 
@@ -96,7 +96,17 @@
 <div class="content">
   <p>
   <ol type="1">
-  <li> <art_name>Strong bounded variation estimates for the multi-dimensional finite volume
+	  
+<li><art_name>Convergence analysis of a numerical scheme
+for a tumour growth model.</art_name>
+<br>J. Droniou, N. Nataraj, and G. C. Remesan. 
+<br>
+IMA Journal of Numerical Analysis, 42(2), 2022.
+<br>
+URL: <a href="https://doi.org/10.1093/imanum/drab016" target="_blank">https://doi.org/10.1093/imanum/drab016</a>
+</li>
+	  
+ <li> <art_name>Strong bounded variation estimates for the multi-dimensional finite volume
 approximation of scalar conservation laws.</art_name> 
 <br>
 Gopikrishnan Chirappurathu Remesan
@@ -104,18 +114,9 @@ Gopikrishnan Chirappurathu Remesan
 ESAIM:M2AN, 55(4), 2021. 
 <br>URL: <a href="https://www.esaim-m2an.org/articles/m2an/abs/2021/05/m2an200189/m2an200189.html" target="_blank">
 https://www.esaim-m2an.org/articles/m2an/abs/2021/05/m2an200189/m2an200189.html</a>
-
 </li> 
-
-  <li><art_name>Convergence analysis of a numerical scheme
-for a tumour growth model.</art_name>
-<br>J. Droniou, N. Nataraj, and G. C. Remesan. 
-<br>
-IMA Journal of Numerical Analysis, 2021.
-<br>
-URL: <a href="https://doi.org/10.1093/imanum/drab016" target="_blank">https://doi.org/10.1093/imanum/drab016</a>
-</li>
-  <li><art_name>Numerical solution of a two dimensional tumour
+	  
+ <li><art_name>Numerical solution of a two dimensional tumour
 growth model with moving boundary.
 </art_name>
 <br>J. Droniou, J. Flegg, and G. C. Remesan. 
@@ -126,7 +127,7 @@ URL: <a href="https://link.springer.com/article/10.1007/s10915-020-01326-6" targ
 https://link.springer.com/article/10.1007/s10915-020-01326-6</a>
 </li>
 </ol>
-  </p>
+ </p>
 </div>
 
 <br>
@@ -155,7 +156,7 @@ https://journal.austms.org.au/ojs/index.php/ANZIAMJ/article/view/13936</a>
 <br>
 
 	
-	<br>
+<br>
 <button class="collapsible">Preprints</button>
 <div class="content">
   <p>
@@ -220,7 +221,11 @@ for (i = 0; i < coll.length; i++) {
 <!------------------------------------------------------------------------------>
 <hr>
 <div style="margin-top:20px">
-  Updated 22/10/2021
+  Updated 19/06/2022
 </div>
+
+<div id="sfcyse7b6skjwy5mpjnm144l4ghe7rqdrs1"></div>
+<script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=yse7b6skjwy5mpjnm144l4ghe7rqdrs1&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=yse7b6skjwy5mpjnm144l4ghe7rqdrs1" border="0" title="website counter" alt="website counter"></a></noscript>
 
 </html>
