@@ -171,6 +171,17 @@ Submitted to J. Math. Biol.
 URL: <a href="https://arxiv.org/abs/2206.04989" target="_blank">
 https://arxiv.org/abs/2206.04989</a>
   </li>
+  
+   <li> <art_name>
+ Lowest-order FEM for fourth-order semilinear problems with trilinear nonlinearity  </art_name>
+<br>
+C. Carstensen, N. Nataraj, G. C. Remesan, D. Shylaja
+  <br>
+Preprint
+<br>
+
+  </li>
+  
   </ol>
   </p>
 </div>
