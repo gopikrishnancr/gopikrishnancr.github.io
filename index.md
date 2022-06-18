@@ -8,7 +8,7 @@
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
     <script type="text/javascript" src="scripts.js"></script>
 
-    <title>Homepage Gopikrishnan Chirappurathu Remesan</title>
+    <title>Homepage of Gopikrishnan Chirappurathu Remesan</title>
   </head>
 
   <body>
@@ -41,16 +41,16 @@
                                 <tr>
                                     <td valign='top'><span class="note">Address:</span></td>
                                     <td>
-                                        <a href="http://www.math.iitb.ac.in/"> Department of Mathematics</a>,<br>
-                                        <a href="https://www.iitb.ac.in/">Indian Institute of Technology Bombay</a>, <br>
-                                        Mumbai, Maharashtra 400076,<br>
-                                        INDIA
+                                        <a href="https://www.unimi.it/en/education/faculties-and-schools/science-and-technology/mathematics"> Dipartimento di Matematica ``F. Enriques''</a>,<br>
+                                        <a href="https://www.unimi.it/en">Università degli Studi di Milano</a>, <br>
+                                        Via C. Saldini 50, Milano 20133,<br>
+                                        ITALY
                                     </td>
                                 </tr>
                             </table>
                             <span class="note">Phone</span>: (+91) 944 768 276 2<br>
-                            <span class="note">Office</span>: B2, Ground Floor, Dept. of Mathematics (Near Central Library)<br>
-                            <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan@iitb.ac.in">gopikrishnan@iitb.ac.in</a>  <br>
+                            <span class="note">Office</span>: 2084 Assegnisti di Ricera<br>
+                            <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan.chirappurathu@unimi.it">gopikrishnan.chirappurathu@unimi.it</a>  <br>
                             <span class="note">Email (Personal) </span>: <a href="mailto:gopi123krishnan@gmail.com">gopi123krishnan@gmail.com</a>
                         </td>
                         <td align="right">
@@ -84,6 +84,9 @@
                 existence (possibly uniqueness) of solutions.
 				</li>
 				</ul>
+		    
+		    I am open to collaborations on problems with a strong motivation from natural sceinces. The problems should also have a scope for scientiic computing and numerical analysis. 
+		    
             </div>
 <br>
 <h4 style="line-height:12px;display:inline">Publications</h4>
@@ -151,6 +154,28 @@ https://journal.austms.org.au/ojs/index.php/ANZIAMJ/article/view/13936</a>
 <br>
 <br>
 
+	
+	<br>
+<button class="collapsible">Preprints</button>
+<div class="content">
+  <p>
+  <ol type="1">
+  <li> <art_name>
+ Two-phase model of compressive stress induced on a surrounding hyperelastic medium by an expanding tumour
+</art_name>
+<br>
+ Gopikrishnan Chirappurathu Remesan, Jennifer Flegg, Helen Byrne
+  <br>
+Submitted to J. Math. Biol.
+<br>
+URL: <a href="https://arxiv.org/abs/2206.04989" target="_blank">
+https://arxiv.org/abs/2206.04989</a>
+  </li>
+  </ol>
+  </p>
+</div>
+<br>
+<br>
 
 <h4 style="line-height:12px;display:inline"> Theses </h4>
 
