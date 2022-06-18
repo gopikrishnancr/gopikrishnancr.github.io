@@ -16,15 +16,15 @@
       <!------------------------------------------------------------------------------>
       <!-- Header                                                                   -->
       <!------------------------------------------------------------------------------>
-       <div style="height: 200px; width: 1400px; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:1200px 300px;
+       <div style="height: 200px; width: 2000px; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
 	        padding:1px 0px 1px 40px">
          <br>
 		 <br>
 		 <br>
 		 <br>
-		 <h1 style="color:white">Gopikrishnan Chirappurathu Remesan</h1>
-         <h3 style="font-weight:normal;line-height:10px;color:white">Posdoctoral Research Fellow</h3>
-		 <h3 style="font-weight:normal;line-height:5px;color:white">Università degli Studi di Milano, Italy</h3>
+		 <h1 style="color:blue">Gopikrishnan Chirappurathu Remesan</h1>
+         <h3 style="font-weight:normal;line-height:10px;color:blue">Posdoctoral Research Fellow</h3>
+		 <h3 style="font-weight:normal;line-height:5px;color:blue">Università degli Studi di Milano, Italy</h3>
        </div>
       <!------------------------------------------------------------------------------>
       <!-- Body                                                                     --> 
@@ -41,7 +41,7 @@
                                 <tr>
                                     <td valign='top'><span class="note">Address:</span></td>
                                     <td>
-                                        <a href="https://www.unimi.it/en/education/faculties-and-schools/science-and-technology/mathematics"> Dipartimento di Matematica ``F. Enriques''</a>,<br>
+                                        <a href="https://www.unimi.it/en/education/faculties-and-schools/science-and-technology/mathematics"> Dipartimento di Matematica "F. Enriques"</a>,<br>
                                         <a href="https://www.unimi.it/en">Università degli Studi di Milano</a>, <br>
                                         Via C. Saldini 50, Milano 20133,<br>
                                         ITALY
