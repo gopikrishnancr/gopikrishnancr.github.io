@@ -16,7 +16,7 @@
       <!------------------------------------------------------------------------------>
       <!-- Header                                                                   -->
       <!------------------------------------------------------------------------------>
-       <div style="height: 200px; width: 2000px; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
+       <div style="height: 200px; width: screen.width; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
 	        padding:1px 0px 1px 40px">
          <br>
 		 <br>
