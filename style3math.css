@@ -1,0 +1,42 @@
+h1 {
+  color: black;
+  margin-left: 5px;
+  font-family: Times;
+  font-size: 30px;
+}
+
+
+h2 {
+  color: black;
+  margin-left: 15px;
+  font-family: Helvetica;
+  font-size: 15px;
+}
+
+
+
+.theorem {
+display: block;
+font-style: italic;
+}
+
+.theorem:before {
+content: "Theorem. ";
+font-weight: bold;
+font-style: normal;
+font-size: 24px;
+}
+
+.theorem[text]:before {
+content: "Theorem (" attr(text) ").  ";
+}
+
+thm_stat{
+	font-family: Times;
+	font-size: 24px;
+}
+
+sec_stat{
+	font-family: Times;
+	font-size: 20px;
+}
