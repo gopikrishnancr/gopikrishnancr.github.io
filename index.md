@@ -10,6 +10,7 @@
     <script type="text/javascript" src="scripts.js"></script>
 
     <title>Homepage of Gopikrishnan Chirappurathu Remesan</title>
+	  <link rel="shortcut icon" href="icon.png">
   </head>
 
   <body>
