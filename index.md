@@ -18,7 +18,7 @@
       <!------------------------------------------------------------------------------>
       <!-- Header                                                                   -->
       <!------------------------------------------------------------------------------>
-       <div style="height: 150px; width: screen.width; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
+       <div style="height: 11em; width: screen.width; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
 	        padding:1px 0px 1px 40px">
          <br>
 		 <h1 style="color:blue">Gopikrishnan Chirappurathu Remesan</h1>
@@ -28,29 +28,31 @@
       <!------------------------------------------------------------------------------>
       <!-- Body                                                                     --> 
 	 
-<br>
+ 
+
 <center>
 	<nav>
 		<ul id="navimenu">
 			<li><a href="education.html">Education</a></li>
 			<li><a href="pubs.html">Publications</a></li>
 			<li><a href="Misc.html">MISC</a></li>
-<li><a href="CV/04_CV_Gopikrishnan_CR_Nov_22.pdf" target="_blank">Resume (PDF)</a></li>
+<li><a href="CV/04_CV_Gopikrishnan_CR_Nov_22.pdf" target="_blank">Resume (PDF)</a></li> 
 		</ul>
 	</nav>
-</center>
-	  
-	    <hr>
+</center>	
 
-        <div class="div2">
+<br>
+
+	        <div class="div2">
             <table width="100%">
                 <tbody>
+<hr>
                     <tr>
                         <td>
                             <table>
                                 <tr>
-                                    <td valign='top'><span class="note">Address:</span></td>
-                                    <td>
+                                                <td valign='top'><span class="note">Address:</span></td>
+                                    <td> 
                                         <a href="https://www.unimi.it/en/education/faculties-and-schools/science-and-technology/mathematics"> Dipartimento di Matematica "F. Enriques"</a>,<br>
                                         <a href="https://www.unimi.it/en">Università degli Studi di Milano</a>, <br>
                                         Via C. Saldini 50, Milano 20133,<br>
@@ -63,13 +65,14 @@
                             <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan.chirappurathu@unimi.it">gopikrishnan.chirappurathu@unimi.it</a>  <br>
                             <span class="note">Email (Personal) </span>: <a href="mailto:gopi123krishnan@gmail.com">gopi123krishnan@gmail.com</a>
                         </td>
-                        <td align="right">
+                        <td align="right" a> 
                             <img src="images/photo_gopi.jpg" height="150">
                         </td>
                     </tr>
                 </tbody>
             </table>
             <hr>
+</div>
 
 
             <div>

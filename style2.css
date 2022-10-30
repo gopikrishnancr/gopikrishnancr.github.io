@@ -38,12 +38,14 @@ h6 {
 
 .note{
 	font-style: italic;
-	font-family: Arial;
+	font-family:  times;
 	font-size: 15px;
 }
 
 .div2{
-	font-family: Arial;
+	font-family: Garamond, serif;
+      font-size: 18px;
+      background-color: #b5e8b5;
 }
 
 
@@ -96,7 +98,7 @@ h6 {
 
 art_name{
   font-weight: bold;
-  font-size: 18px;
+  font-size: 18\opx;
 }
 
 

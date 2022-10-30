@@ -2,10 +2,11 @@ ol,ul {
 	list-style: none;
 }
 
+
 #navimenu {
-	margin:10px;
+      margin-bottom:10px;
 	width:device-width;
-      height:50px;
+      overflow: hidden;
 	font-family: times;
       font-size: 20px;
 }
@@ -18,6 +19,7 @@ ol,ul {
 	float:left;
 	margin-left:50px;
       margin-right:50px;
+      margin-top: 10px;
 	text-decoration:none;
 	background-color:#fff;
 	color:#008;
