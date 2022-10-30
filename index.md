@@ -18,7 +18,7 @@
       <!------------------------------------------------------------------------------>
       <!-- Header                                                                   -->
       <!------------------------------------------------------------------------------>
-       <div style="height: 11em; width: screen.width; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
+       <div style="width: disaply-width;  overflow: hidden; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
 	        padding:1px 0px 1px 40px">
          <br>
 		 <h1 style="color:blue">Gopikrishnan Chirappurathu Remesan</h1>
