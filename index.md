@@ -33,9 +33,9 @@
 <center>
 	<nav>
 		<ul id="navimenu">
-			<li><a href="education.html">Education</a></li>
-			<li><a href="pubs.html">Publications</a></li>
-			<li><a href="Misc.html">MISC</a></li>
+			<li><a href="education.html" target="_blank">Education</a></li>
+			<li><a href="pubs.html" target="_blank">Publications</a></li>
+			<li><a href="Misc.html" target="_blank">MISC</a></li>
 <li><a href="CV/04_CV_Gopikrishnan_CR_Nov_22.pdf" target="_blank">Resume (PDF)</a></li> 
 		</ul>
 	</nav>
