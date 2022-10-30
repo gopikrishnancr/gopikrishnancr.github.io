@@ -82,7 +82,7 @@ h6 {
 
 .content {
   padding: 0 18px;
-  width: 100% ;
+  width: device-width;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -96,7 +96,7 @@ h6 {
 
 art_name{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 

@@ -10,7 +10,7 @@
     <script type="text/javascript" src="scripts.js"></script>
 
     <title>Homepage of Gopikrishnan Chirappurathu Remesan</title>
-	  <link rel="shortcut icon" href="icon.png">
+<link rel="shortcut icon" href="icon.png">
   </head>
 
   <body>
@@ -35,7 +35,7 @@
 			<li><a href="education.html">Education</a></li>
 			<li><a href="pubs.html">Publications</a></li>
 			<li><a href="Misc.html">MISC</a></li>
-<li><a href="04_CV_Gopikrishnan_CR_Nov_22.pdf">Resume (PDF)</a></li>
+<li><a href="04_CV_Gopikrishnan_CR_Nov_22.pdf" target="_blank">Resume (PDF)</a></li>
 		</ul>
 	</nav>
 </center>
