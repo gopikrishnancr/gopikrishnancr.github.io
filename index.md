@@ -127,7 +127,7 @@ Advisor:
 <!------------------------------------------------------------------------------>
 <hr>
 <div style="margin-top:20px">
-  Updated 19/06/2022
+  Updated 30/10/2022
 </div>
 
 <div id="sfcyse7b6skjwy5mpjnm144l4ghe7rqdrs1"></div>
