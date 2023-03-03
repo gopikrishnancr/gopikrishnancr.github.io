@@ -22,8 +22,8 @@
 	        padding:1px 0px 1px 40px">
          <br>
 		 <h1 style="color:blue">Gopikrishnan Chirappurathu Remesan</h1>
-         <h3 style="font-weight:normal;line-height:10px;color:blue">Posdoctoral Research Fellow</h3>
-		 <h3 style="font-weight:normal;line-height:5px;color:blue">Università degli Studi di Milano, Italy</h3>
+         <h3 style="font-weight:normal;line-height:10px;color:blue">Assistant Professor</h3>
+		 <h3 style="font-weight:normal;line-height:5px;color:blue">Indian Institute of Technology Palakkad</h3>
        </div>
       <!------------------------------------------------------------------------------>
       <!-- Body                                                                     --> 
