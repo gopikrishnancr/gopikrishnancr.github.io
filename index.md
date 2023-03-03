@@ -53,16 +53,16 @@
                                 <tr>
                                                 <td valign='top'><span class="note">Address:</span></td>
                                     <td> 
-                                        <a href="https://www.unimi.it/en/education/faculties-and-schools/science-and-technology/mathematics"> Dipartimento di Matematica "F. Enriques"</a>,<br>
-                                        <a href="https://www.unimi.it/en">Università degli Studi di Milano</a>, <br>
-                                        Via C. Saldini 50, Milano 20133,<br>
-                                        ITALY
+                                        <a href="https://beta2.iitpkd.ac.in/mathematics"> Department of Mathematics</a>,<br>
+                                        <a href="https://beta2.iitpkd.ac.in/">Indian Institute of Technology Palakkad</a>, <br>
+                                        Ahalia Integrated Campus, Kozhippara P. O., Palakkad, Kerala<br>
+                                        INDIA 6785557
                                     </td>
                                 </tr>
                             </table>
-                            <span class="note">Phone</span>: (+91) 944 768 276 2, (+39) 351 056 801 7 <br>
-                            <span class="note">Office</span>: 2084 Assegnisti di Ricera, Via C. Saldini 50, Milano<br>
-                            <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan.chirappurathu@unimi.it">gopikrishnan.chirappurathu@unimi.it</a>  <br>
+                            <span class="note">Phone</span>: (+91) 944 768 276 2 <br>
+                            <span class="note">Office</span>: Ahalia Integrated Campus<br>
+                            <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan@iitpkd.ac.in">gopikrishnan@iitpkd.ac.in</a>  <br>
                             <span class="note">Email (Personal) </span>: <a href="mailto:gopi123krishnan@gmail.com">gopi123krishnan@gmail.com</a>
                         </td>
                         <td align="right" a> 
