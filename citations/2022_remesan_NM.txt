@@ -1,0 +1,9 @@
+@article{
+      2022_CCNNGKDS,
+	title={Unified a priori analysis of four second-order FEM for fourth-order quadratic semilinear problems},
+	author={C. Carstensen, N. Nataraj, G. C. Remesan & D. Shylaja },
+      journal = {Numer. Math.},
+      volume = {54},
+      year = 2023, 
+      URL = {https://link.springer.com/article/10.1007/s00211-023-01356-w}
+}
