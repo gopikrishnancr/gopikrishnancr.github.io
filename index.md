@@ -55,13 +55,13 @@
                                     <td> 
                                         <a href="https://beta2.iitpkd.ac.in/mathematics"> Department of Mathematics</a>,<br>
                                         <a href="https://beta2.iitpkd.ac.in/">Indian Institute of Technology Palakkad</a>, <br>
-                                        Ahalia Integrated Campus, Kozhippara P. O., Palakkad, Kerala<br>
-                                        INDIA 6785557
+                                        Sahyadri Campus, Kanjikkode West, Palakkad, Kerala<br>
+                                        INDIA 678623
                                     </td>
                                 </tr>
                             </table>
                             <span class="note">Phone</span>: (+91) 944 768 276 2 <br>
-                            <span class="note">Office</span>: Ahalia Integrated Campus<br>
+                            <span class="note">Office</span>: Facutly Cabin 10, APJ Abdul Kalam Block (D03), Sahyadri Campus<br>
                             <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan@iitpkd.ac.in">gopikrishnan@iitpkd.ac.in</a>  <br>
                             <span class="note">Email (Personal) </span>: <a href="mailto:gopi123krishnan@gmail.com">gopi123krishnan@gmail.com</a>
                         </td>
