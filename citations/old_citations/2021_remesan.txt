@@ -1,0 +1,10 @@
+@article{
+	2021_Remesan,
+	title={Strong bounded variation estimates for the multi-dimensional finite volume approximation of scalar conservation laws},
+	author={G. C.  Remesan},
+	journal={ESAIM:M2AN},
+	volume={55},
+	number={4},
+	year={2021},
+	URL = {https://doi.org/10.1051/m2an/2021027}
+}

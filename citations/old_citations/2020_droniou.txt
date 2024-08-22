@@ -1,0 +1,11 @@
+@article{
+	2020_Droniou,
+	title={Numerical solution of a two dimensional tumour growth model with moving boundary},
+	author={J. Droniou and J. Flegg and G. C. Remesan},
+	journal= {J. Sci. Comp.},
+	year={2020},
+	volume={85},
+	number={20},
+	year = {2020},
+	URL = {https://doi.org/10.1007/s10915-020-01326-6}
+}

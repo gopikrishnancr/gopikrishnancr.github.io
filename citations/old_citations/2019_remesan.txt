@@ -1,0 +1,9 @@
+@article{2018_remesan,
+	author    = {G. C. Remesan},
+	title     = {Numerical solution of the two-phase tumour growth model with moving boundary},
+	pages     = {C1--C15},
+	journal   =  {ANZIAM J.},
+	volume    = {60},
+	year      = {2019},
+	URL  = {https://doi.org/10.21914/anziamj.v60i0.13936}
+}

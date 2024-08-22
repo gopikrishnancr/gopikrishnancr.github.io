@@ -100,7 +100,7 @@ h7{
 }
 .about-me div {
   max-width: 800px;
-  margin-top: -90px;
+  margin-top: -150px;
 }
 
 #HASH {
@@ -166,10 +166,10 @@ ul {
 }
 
 ul.int ::before {
-  content: "\2736";
+  content: "\2710";
     list-style-position: inside;
 	line-height: 15px;
-  color: #a3afd3;
+  color: #1846d1;
   font-weight: bold;
   display: inline-block; 
   font-size: 20px;
@@ -183,10 +183,10 @@ ul.int ::before {
 }
 
 ul.bullet-li ::before{
-	content: "\2736";
+	content: "\2720";
 	 list-style-position: inside;
 	line-height: 15px;
-  color: #f7ebf8;
+  color: #3b4fa8;
   font-weight: bold;
   display: inline-block; 
   font-size: 20px;

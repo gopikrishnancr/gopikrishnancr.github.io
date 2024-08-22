@@ -1,31 +1,14 @@
-ol,ul {
-	list-style: none;
-}
 
 #navimenu {
 	margin:10px;
-	width:1000px;
       height:50px;
 	font-family: times;
       font-size: 20px;
 }
 
-
-
-#navimenu  a {
-	display:block;
-	width:100px;
-	float:left;
-	margin-left:50px;
-      margin-right:50px;
-	text-decoration:none;
-	background-color:#fff;
-	color:#008;
-       border:3px solid #6666ff;
-      border-radius: 25px;
-  width: 200px;
-  height: 25px;
-
+#navimenu ul {
+	display: inline-block;
+	list-style-type: none;
 }
 
 #navimenu  a:hover {

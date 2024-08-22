@@ -1,0 +1,8 @@
+@article{
+	2022_remesan,
+	title={Two phase model for compressive stress induced on a surrounding medium by an expanding tumour},
+	author={H. M. Byrne and J. A. Flegg and G. C. Remesan},
+	journal = {arXiv:2206.04989},
+	year = 2022, 
+	URL = {https://arxiv.org/abs/2206.04989}
+}

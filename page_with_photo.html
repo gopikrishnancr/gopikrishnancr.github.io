@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Webpage with Marquee, Footer, and About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 1000px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        main {
+            padding: 2em;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+        marquee {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        .about-me {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .about-me img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+        }
+        .about-me div {
+            max-width: 800px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .footer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .footer-section {
+            margin-bottom: 10px;
+        }
+        .footer-section h4 {
+            margin-bottom: 5px;
+        }
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Centered Webpage</h1>
+        </header>
+        <marquee behavior="scroll" direction="left">This is a scrolling marquee text. Welcome to the Mathematics Course!</marquee>
+        <main>
+            <section class="about-me">
+                <img src="your-photo.jpg" alt="Your Photo">
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hello! I am Dr. Gopikrishnan Chirappurathu Remesan, an Assistant Professor at IIT Palakkad. My research interests include numerical analysis, mathematical biology, and scientific values. I am passionate about nurturing young talents and inspiring students to pursue pure sciences.</p>
+                </div>
+            </section>
+            <section>
+                <h2>About This Page</h2>
+                <p>This webpage is designed to be 1000px wide and aligned centrally in the browser. It uses CSS Flexbox to achieve the centering effect.</p>
+            </section>
+            <section>
+                <h2>Content Section</h2>
+                <p>Here you can add more content, images, or any other elements you need for your webpage.</p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p>Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

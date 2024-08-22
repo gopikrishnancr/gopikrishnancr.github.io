@@ -18,12 +18,12 @@
       <!------------------------------------------------------------------------------>
       <!-- Header                                                                   -->
       <!------------------------------------------------------------------------------>
-       <div style="width: disaply-width;  overflow: hidden; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
+       <div style="height: 11em; width: screen.width; background-color: #b5e8b5; background-image: url('title_pan.png');background-size:2000px 400px;
 	        padding:1px 0px 1px 40px">
          <br>
 		 <h1 style="color:blue">Gopikrishnan Chirappurathu Remesan</h1>
-         <h3 style="font-weight:normal;line-height:10px;color:blue">Assistant Professor</h3>
-		 <h3 style="font-weight:normal;line-height:5px;color:blue">Indian Institute of Technology Palakkad</h3>
+         <h3 style="font-weight:normal;line-height:10px;color:blue">Posdoctoral Research Fellow</h3>
+		 <h3 style="font-weight:normal;line-height:5px;color:blue">Università degli Studi di Milano, Italy</h3>
        </div>
       <!------------------------------------------------------------------------------>
       <!-- Body                                                                     --> 
@@ -33,10 +33,10 @@
 <center>
 	<nav>
 		<ul id="navimenu">
-			<li><a href="education.html" target="_blank">Education</a></li>
-			<li><a href="pubs.html" target="_blank">Publications</a></li>
-			<li><a href="Misc.html" target="_blank">MISC</a></li>
-<li><a href="CV/04_CV_Gopikrishnan_CR_Mar_23.pdf" target="_blank">Resume (PDF)</a></li> 
+			<li><a href="education.html">Education</a></li>
+			<li><a href="pubs.html">Publications</a></li>
+			<li><a href="Misc.html">MISC</a></li>
+<li><a href="CV/04_CV_Gopikrishnan_CR_Nov_22.pdf" target="_blank">Resume (PDF)</a></li> 
 		</ul>
 	</nav>
 </center>	
@@ -53,16 +53,16 @@
                                 <tr>
                                                 <td valign='top'><span class="note">Address:</span></td>
                                     <td> 
-                                        <a href="https://beta2.iitpkd.ac.in/mathematics"> Department of Mathematics</a>,<br>
-                                        <a href="https://beta2.iitpkd.ac.in/">Indian Institute of Technology Palakkad</a>, <br>
-                                        Sahyadri Campus, Kanjikkode West, Palakkad, Kerala<br>
-                                        INDIA 678623
+                                        <a href="https://www.unimi.it/en/education/faculties-and-schools/science-and-technology/mathematics"> Dipartimento di Matematica "F. Enriques"</a>,<br>
+                                        <a href="https://www.unimi.it/en">Università degli Studi di Milano</a>, <br>
+                                        Via C. Saldini 50, Milano 20133,<br>
+                                        ITALY
                                     </td>
                                 </tr>
                             </table>
-                            <span class="note">Phone</span>: (+91) 944 768 276 2 <br>
-                            <span class="note">Office</span>: Facutly Cabin 10, APJ Abdul Kalam Block (D03), Sahyadri Campus<br>
-                            <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan@iitpkd.ac.in">gopikrishnan@iitpkd.ac.in</a>  <br>
+                            <span class="note">Phone</span>: (+91) 944 768 276 2, (+39) 351 056 801 7 <br>
+                            <span class="note">Office</span>: 2084 Assegnisti di Ricera, Via C. Saldini 50, Milano<br>
+                            <span class="note">Email (Official) </span>: <a href="mailto:gopikrishnan.chirappurathu@unimi.it">gopikrishnan.chirappurathu@unimi.it</a>  <br>
                             <span class="note">Email (Personal) </span>: <a href="mailto:gopi123krishnan@gmail.com">gopi123krishnan@gmail.com</a>
                         </td>
                         <td align="right" a> 
@@ -81,7 +81,8 @@
 <br> <br>
   I focus on numerical analysis and mathematical modelling. A brief list of topics on interest are presented below. 
 				<ul class="int">
-				<li> Multiphase flow models of complex biological problems.
+				<li> Mathematical modeling using multi-phase mixture theory 
+				and non-linear elasticity theory of complex biological problems.
 				</li> 
 				<li> Scientific computing using appropriate combinations of 
 				finite element and finite volume methods.
@@ -126,7 +127,7 @@ Advisor:
 <!------------------------------------------------------------------------------>
 <hr>
 <div style="margin-top:20px">
-  Updated 30/10/2022
+  Updated 19/06/2022
 </div>
 
 <div id="sfcyse7b6skjwy5mpjnm144l4ghe7rqdrs1"></div>
