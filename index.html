@@ -1,95 +1,1094 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STP - Department of Mathematics, IIT Palakkad</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style_card.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Calibri, sans-serif;
+      background: url(tiled.png) repeat fixed;
+      background-size: 100px 100px;
+      overflow-x: hidden;
+    }
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css"/>
-    <link href="navigation_new.css" rel="stylesheet">
-    <link href="navigation.css" rel="stylesheet">
-    <script type="text/javascript" src="scripts.js"></script>
-    <title> Homepage (Gopikrishnan Remesan) </title>
-    <link rel="shortcut icon" href="icon.png">
-  </head>
+    .main-column {
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 100vh;
+      z-index: 1;
+      position: relative;
+      background-color: white;
+      font-family: Calibri;
+    }
 
-  <body>
-  <div class="pagecontainer">
-       <div style="width: display-width;  overflow: hidden; background-color: #47538d; 
-	        padding:1px 20px 1px 20px;">
-		    <h1 style="color:rgb(234, 238, 241)">
-           <center>
-             <i>Gopikrishnan Chirappurathu Remesan</i>
-           </center>
-        </h1>
-         <h3 style="font-weight:normal;line-height:15px;color:rgb(255, 255, 255)"> 
-            <center>
-           <h7> Assistant Professor in Mathematics </h7>  <br> <br>
-            <h7>Indian Institute of Technology Palakkad  </h7> 
-            </center>
-          </h3>
-       </div>
-      
-	 <br>
-      <div class="container">
-      <marquee behavior="scroll" direction="left"><b> </b> ||</marquee>
-      </div>             
-   <br>             
-<!------------------------------ Main Tabs------------------------------------------------------------------------->
-<main>
-<nav class="nav">
-  <a href="education.html" target="_blank">Education</a>
-  <a href="Research/research.html" target="_blank">Research</a>
-  <a href="pubs.html" target="_blank">Publications</a>
-  <a href="Group/group_new.html" target="_blank">Group</a>
-  <!-- <a href="Outreach/outreach.html" target="_blank">Outreach</a>
-  <a href="#resources">Resources</a> -->
-  <a href="Teaching/teaching.html" target="_blank">Teaching</a>
- <!-- <a href="Gallery/gallery.html" target="_blank">Gallery</a> -->
-</nav>
+    /* Header */
+    .stp-header {
+      background: linear-gradient(to right, #4a77a4, #6aa8d6);
+      color: white;
+      padding: 20px 30px;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      height: 80px;
+      flex-shrink: 0;
+    }
+    .header-text {
+      flex-grow: 1;
+    }
+    .main-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .subheading {
+      font-size: 1.2rem;
+      color: #e0f3ff;
+    }
+    .divider {
+      width: 2px;
+      height: 70px;
+      background: #cde6f7;
+    }
+
+    /* Menu Bar */
+    .menu-bar {
+      background: #355d84;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 10px;
+    }
+    .menu-bar a {
+      color: white;
+      font-size: 1.3rem;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .menu-bar a:hover {
+      background: #4d8ecb;
+      transform: translateY(-2px);
+    }
+
+    .hamburger {
+      display: none;
+      background: #355d84;
+      color: white;
+      font-size: 1.5rem;
+      border: none;
+      padding: 10px 20px;
+      width: 100%;
+      text-align: left;
+    }
+
+    .info-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 0;
+    }
+
+    .info-wrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .about-box {
+      width: 600px;
+      margin-right: -40px;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(12px);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+      animation-delay: 0.3s;
+      text-align: justify;
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .slideshow-box {
+  width: 600px;
+  height: 340px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+  background: white;
+  z-index: 1;
+}
+
+.slideshow-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;   /* make all images stack */
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+  z-index: 0;
+}
+
+.slideshow-box img.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.slide-caption {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    max-width: 60%;
+    font-size: 0.95rem;
+    color: #fff;
+    background: linear-gradient(to left, #355d84, rgba(0, 0, 0, 0));
+    padding: 8px 14px;
+    border-radius: 6px;
+    z-index: 6;
+    text-align: right;
+  }
+
+    .dots {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+    }
+    .dot {
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin: 0 5px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .dot.active {
+      background-color: white;
+    }
+
+    .slide-arrow {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    padding: 8px 12px;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 4px;
+    user-select: none;
+    transition: background-color 0.3s;
+  }
+  .slide-arrow.left { left: 10px; }
+  .slide-arrow.right { right: 10px; }
+  .slide-arrow:hover { background-color: rgba(0,0,0,0.6); }
+
+    .about-box h3 {
+      color: #003d66;
+      margin-bottom: 10px;
+    }
+    .about-box p {
+      font-size: 1.1rem;
+      color: #7a7777;
+    }
+
+    .announcement-section {
+    margin: 40px auto 20px auto;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .marquee-box {
+    background: linear-gradient(90deg, #8ebbdc, #c9e2f0);
+    border-radius: 8px;
+    padding: 12px;
+    color: #003366;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+  }
+
+  .apply-link a {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .apply-link a:hover {
+    background-color: #0059b3;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .content-section {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+
+  .section-header {
+    background: linear-gradient(to right, #004080, #2a8cc7);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+
+  .section-header h2 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .section-header i {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .content-section p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 0;
+  }
+
+  .schedule-table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Calibri, sans-serif;
+    font-size: 1rem;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 12px 10px;
+    text-align: center;
+    border-bottom: 1px solid #cce0f5;
+  }
+
+  .schedule-table thead {
+    background: linear-gradient(to right, #004080, #2a8cc7);
+    color: white;
+  }
+
+  .schedule-table tbody tr:nth-child(even) {
+    background-color: #f5faff;
+  }
+
+  .schedule-table td[colspan] {
+    font-weight: bold;
+    background-color: #eaf2fb;
+    color: #555;
+  }
+
+  .schedule-table .sunday-row td {
+    background: linear-gradient(to right, #7ba8d1, #a3c9e5);
+    color: #003366;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .schedule-note {
+    font-size: 1rem;
+    color: #333;
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .event-table-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .event-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Calibri, sans-serif;
+    font-size: 0.95rem;
+  }
+
+  .event-table th,
+  .event-table td {
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid #d4e6f1;
+  }
+
+  .event-table thead {
+    background: linear-gradient(to right, #004080, #2a8cc7);
+    color: white;
+  }
+
+  .event-table tbody tr:nth-child(even) {
+    background-color: #f4faff;
+  }
+
+  .event-table tbody tr:hover {
+    background-color: #e6f2fb;
+  }
+
+  .event-table-container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+
+  .syllabus-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .syllabus-unit {
+    background: linear-gradient(135deg, #eaf6ff, #f7fbff);
+    border-left: 6px solid #2a8cc7;
+    padding: 18px 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .syllabus-unit h2 {
+    font-size: 1.3rem;
+    color: #004080;
+    margin-bottom: 10px;
+    font-family: Calibri, sans-serif;
+  }
+
+  .syllabus-unit p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+  }
+  .venue-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .venue-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .venue-text {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  .venue-box {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(to bottom right, #e1f0fa, #f8fcff);
+    border-left: 6px solid #2a8cc7;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .venue-box h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    color: #004080;
+  }
+
+  .venue-box p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #003366;
+    text-align: justify;
+  }
+
+  .venue-map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .contact-box {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(to bottom right, #e1f0fa, #f8fcff);
+    border-left: 6px solid #2a8cc7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .contact-box h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #004080;
+  }
+
+  .contact-box p,
+  .contact-box ul {
+    margin: 0;
+    font-size: 1rem;
+    color: #003366;
+    line-height: 1.6;
+  }
+
+  .contact-box ul {
+    padding-left: 20px;
+    list-style: square;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  .contact-box {
+    flex: 1;
+    min-width: 300px;
+    background: linear-gradient(to bottom right, #e1f0fa, #f8fcff);
+    border-left: 6px solid #2a8cc7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .contact-box h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    color: #004080;
+  }
+
+  .contact-box p,
+  .contact-box ul {
+    margin: 0;
+    font-size: 1rem;
+    color: #003366;
+    line-height: 1.6;
+  }
+
+  .contact-box ul {
+    padding-left: 20px;
+    list-style: square;
+  }
+
+  .instructions-box {
+    background: linear-gradient(to right, #f0f9ff, #e8f4fb);
+    border-left: 6px solid #2a8cc7;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .instructions-box ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #003366;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  .section-divider {
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right,  #e8f4fb, #ffffff);
+  }
  
+  .pdf-download-link {
+    display: none;
+    text-align: center;
+    margin: 20px auto;
+  }
 
-<!----------------------------------------------------------------------------------------------------------------->
+  .styled-download-btn {
+    display: inline-block;
+    background: linear-gradient(to right, #004080, #2a8cc7);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
 
-<div class="div3">
-  <section class="about-me">
-    <img src="photo_head.jpg" alt="Your Photo">
-    <div>
-        <h2>Hi, I am Dr Gopikrishnan Chirappurathu Remesan, an assistant professor in mathematics, IIT Palakkad.</h2>
-        <p> My research interests include numerical analysis, mathematical biology, and scientific computing. Specifically, I focus on
-          analysis of finite element based numerical implementation of model problems from biological sciences.  
-          I am passionate about nurturing young talents and inspiring students to pursue pure sciences.</p>
-    </div>
-</section>
-</div>
-</main>
+  .styled-download-btn:hover {
+    background: #0059b3;
+    transform: translateY(-2px);
+  }
 
 
-<footer>
-  <div class="footer-container">
-      <div class="footer-section">
-          <p> Office</p>
-            <address>Faculty cabin 10, Dr A P J Abdul Kalam Block (D03), Sahyadri Campus, IIT Palakkad</address> 
-           <p>Postal address <address>Department of Mathematics, IIT Palakkad, Kanjikkode West, Palakkad, Kerala, India</address> </p>
-           <p> gopikrishnan@iitpkd.ac.in, 91 (491) 209 1405</p>
-           <p> </p>
+    @media (max-width: 768px) {
+      body {
+        background: white;
+      }
+      .main-column {
+        width: 100%;
+        padding: 0 10px;
+      }
+      .menu-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+      }
+      .menu-bar.show {
+        display: flex;
+      }
+      .hamburger {
+        display: block;
+      }
+      .info-section {
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+      }
+      .info-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-box {
+        margin: 0 0 20px 0;
+        width: 100%;
+        padding: 15px;
+        font-size: 0.95rem;
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+      .slideshow-box {
+        width: 100%;
+        height: 220px;
+      }
+
+      .slideshow-box img,
+    .syllabus-container img,
+    .content-section img,
+    .venue-box img {
+      filter: brightness(0.95) contrast(0.95) saturate(0.8);
+    }
+
+      .slide-arrow {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        color: white;
+        background-color: rgba(0,0,0,0.3);
+        padding: 8px 12px;
+        cursor: pointer;
+        z-index: 4;
+        border-radius: 4px;
+        user-select: none;
+        transition: background-color 0.3s;
+      }
+      .slide-arrow:hover {
+        background-color: rgba(0,0,0,0.6);
+      }
+      .slide-arrow.left { left: 10px; }
+      .slide-arrow.right { right: 10px; }
+
+      .venue-wrapper {
+      flex-direction: column;
+    }
+
+    .contact-wrapper {
+      flex-direction: column;
+    }
+
+    .contact-wrapper {
+      flex-direction: column;
+    }
+
+    .pdf-viewer {
+      display: none !important;
+    }
+
+    .pdf-download-link {
+      display: block;
+    }
+    }
+
+  </style>
+</head>
+<body>
+<div class="main-column">
+  <header class="stp-header">
+    <div class="header-content">
+      <a href="https://iitpkd.ac.in" target="_blank"> <img src="220px-Indian_Institute_of_Technology_Palakkad.webp" alt="Logo" class="logo"> </a>
+      <div class="divider"></div>
+      <div class="header-text">
+        <div class="main-title">Summer Training Programme in Mathematics</div>
+        <a href="https://math.iitpkd.ac.in/" target="_blank" style="text-decoration: none; color: inherit;"><div class="subheading">Department of Mathematics, IIT Palakkad</div></a>
+        <div class="subheading">30 June – 10 July 2025</div>
       </div>
-   <!--   <div class="footer-section">
-          <h4>Follow Us</h4>
-          <p><a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
-      </div> -->
-  </div>
+    </div>
+  </header>
 
-  <hr>
-<div style="margin-top:10px">
-  Updated 14/09/2024
+  <button class="hamburger" onclick="toggleMenu()">☰ Menu</button>
+
+  <nav class="menu-bar" id="menu">
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#venue">Venue</a>
+    <a href="#instructions">Instructions</a>
+    <a href="#poster">Poster</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+
+    <section class="announcement-section">
+        <div class="marquee-box">
+          <marquee behavior="scroll" direction="left" scrollamount="6">
+             Applications for the Summer Training Programme 2025 are now open! Deadline: May 7. Announcement of results by May 21.
+          </marquee>
+        </div>
+      </section>
+
+    <div class="info-section">
+      <div class="info-wrapper">
+        <div class="about-box">
+          <h3>Programme Theme</h3>
+          <p>
+            The Department of Mathematics launched the Summer Training Programme in Mathematics (STPM) in 2024. We are pleased to present its second edition in 2025. 
+        The primary aim of this program is to identify young minds who are at 
+        the entry-level of mathematics, motivate and groom them to be competent enough to solve some of 
+        the challenging problems in mathematics. Towards achieving this goal, the workshop will give focused and concentrated 
+        training by conducting interactive sessions in core mathematics wherein the participants will be prompted to learn mathematics 
+        by doing it themselves. The programme is going to be conducted by the Faculty of the Department of Mathematics and sponsored
+         by IIT Palakkad.
+          </p>
+        </div>
+        <div class="slideshow-box">
+          <img src="DSC04460.JPG" alt="Slide 1" class="active" data-caption="STP 2024 @ Backdrop of Western Ghats">
+          <img src="IIT_Palakkad_DSCN1100.jpg" alt="Slide 2" data-caption="Nila Campus Main Gate">
+          <img src="Priority1_Saraswati Block-1.jpg" alt="Slide 3" data-caption="Saraswati Block (Lecture Halls)">
+          <img src="IMG-20240622-WA0020.jpg" alt="Slide 3" data-caption="STP 2024 @ Interlude from Class">
+          <div class="dots" id="slideDots"></div>
+          <div class="slide-arrow left" onclick="prevSlide()">&#10094;</div>
+          <div class="slide-arrow right" onclick="nextSlide()">&#10095;</div>
+          <button id="pauseButton" title="Pause/Play"
+          style="position:absolute; right:10px; bottom:15px; z-index:5; background: rgba(0,0,0,0.5); color:white; border:none; border-radius:50%; padding:10px 12px; cursor:pointer; font-size:1.2rem;">
+          <i class="fas fa-pause"></i>
+        </button>
+          <div class="slide-caption" id="slideCaption"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="stp-section">
+      <div class="stp-sash">
+        <h2>Participation Details</h2>
+      </div>
+    
+      <div class="stp-cards">
+        <div class="stp-card">
+          <h3>Eligibility</h3>
+          <p>
+            Students enrolled in colleges and universities and have completed their second year of
+            B.Sc with mathematics as one of the majors or second year of Integrated BS-MS
+            programme by June 2025 are eligible to apply
+          </p>
+        </div>
+        <div class="stp-card">
+          <h3>Support</h3>
+          <p>
+            Selected candidates will be paid second-class sleeper return train/ bus (ordinary) fare for the shortest route.
+The boarding and lodging for the duration of the programme will be free. The study material for the courses
+will also be provided. Internet and Library facilities of
+IIT will also be made available.
+          </p>
+        </div>
+        <div class="stp-card">
+          <h3>Selection</h3>
+          <p>
+            The selection will be purely on merit, based on consistently good academic
+             performance and the recommendation to be obtained by the candidate from her/his Mathematics teachers 
+             who are closely acquainted with the candidate. The list of the selected students will be posted
+on the IIT Palakkad website during the 4th week of May
+(tentatively).
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcement-section">
+        <div class="apply-link">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScg4_YSzpDiQFvitD8YwzPI4QnTskQZ_V5mQBvx_a78yJR10A/viewform?usp=dialog" target="_blank">🎓 Apply to STPM 2025</a>
+        </div>
+      </section>
+      
+      <section id="events" class="content-section">
+        <div class="section-header">
+          <h2>Events</h2>
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="event-table-container">
+            <table class="event-table">
+              <thead>
+                <tr>
+                  <th>Event</th>
+                  <th>Date & Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Application Starts</td><td>7 April</td></tr>
+                <tr><td>Application Closes</td><td>7 May</td></tr>
+                <tr><td>Selection Announcement</td><td>21 May</td></tr>
+                <tr><td>Confirmation by participant</td><td>30 May</td></tr>
+                <tr><td>Registration (Malhar/Saveri Hostels)</td><td>29 June</td></tr>
+                <tr><td>Registration (Saraswati Block)</td><td>30 June</td></tr>
+                <tr><td>Inauguration</td><td>30 June (9:00 AM)</td></tr>
+                <tr><td>Workshop Dinner</td><td>9 July (Wednesday, 7:30 PM)</td></tr>
+                <tr><td>Invited Talk</td><td>10 July (11:00 AM – 12:00 PM)</td></tr>
+                <tr><td>Valedictory Session</td><td>10 July (12:00 PM – 12:45 PM)</td></tr>
+              </tbody>
+            </table>
+          </div>
+      </section>
+    
+      <div class="section-divider"></div>
+
+      <section id="syllabus" class="content-section">
+        <div class="section-header">
+          <h2>Syllabus</h2>
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="syllabus-container">
+
+            <div class="syllabus-unit">
+              <h2>🧠 Fundamentals</h2>
+              <p>
+                Axiomatic set theory; Zermelo–Fraenkel Axioms, Set operations, Relations, Equivalence relations, Functions and inverse images, Compositions, Peano Axioms, Number systems, Mathematical Induction, Cardinality, Countable sets, Uncountable sets, Axiom of choice, Zorn's lemma, Well ordering principle, Schroeder–Bernstein Theorem.
+              </p>
+            </div>
+          
+            <div class="syllabus-unit">
+              <h2>📈 Real Analysis</h2>
+              <p>
+                Real line, Order, Bounded sets, LUB axiom, Archimedean Principle, Sequence, Convergence of sequences, Subsequences, Cauchy's criterion, Bolzano–Weierstrass Theorem, Infinite series and Convergence, Continuity of functions, Intermediate Value Theorem.
+              </p>
+            </div>
+          
+            <div class="syllabus-unit">
+              <h2>📐 Linear Algebra</h2>
+              <p>
+                System of linear equations, Gaussian elimination method, Row and Column Rank, Vector spaces and examples, Subspaces and examples, Basis and dimension, Linear transformations, Algebra of linear transformations, Rank–Nullity Theorem.
+              </p>
+            </div>
+          
+          </div>
+      </section>
+      
+      <div class="section-divider"></div>
+      <section id="schedule" class="content-section">
+        <div class="section-header">
+          <h2>Schedule</h2>
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="schedule-table-container">
+            <table class="schedule-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>9:00–10:30 AM</th>
+                  <th>11:00 AM –12:30 PM</th>
+                  <th>2:00–3:30 PM</th>
+                  <th>4:00–5:00 PM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Mon, 30.06.25</td><td>Fundamentals (SD)</td><td>Linear Algebra (GK)</td><td>Analysis (JCR)</td><td>Tutorials</td></tr>
+                <tr><td>Tue, 01.07.25</td><td>Analysis (JCR)</td><td>Fundamentals (SD)</td><td>Linear Algebra (GK)</td><td>Tutorials</td></tr>
+                <tr><td>Wed, 02.07.25</td><td>Linear Algebra (GK)</td><td>Analysis (JCR)</td><td>Fundamentals (SD)</td><td>Tutorials</td></tr>
+                <tr><td>Thu, 03.07.25</td><td>Fundamentals (SD)</td><td>Linear Algebra (GK)</td><td>Analysis (JCR)</td><td>Tutorials</td></tr>
+                <tr><td>Fri, 04.07.25</td><td>Analysis (LS)</td><td>Fundamentals (SD)</td><td>Linear Algebra (RV)</td><td>Tutorials</td></tr>
+                <tr><td>Sat, 05.07.25</td><td>Linear Algebra (RV)</td><td>Analysis (LS)</td><td>Fundamentals (SS)</td><td>Tutorials</td></tr>
+                <tr class="sunday-row"><td colspan="5">Sunday, 06.07.25 – No Sessions</td></tr>
+                <tr><td>Mon, 07.07.25</td><td>Fundamentals (SS)</td><td>Linear Algebra (RV)</td><td>Analysis (LS)</td><td>Tutorials</td></tr>
+                <tr><td>Tue, 08.07.25</td><td>Analysis (LS)</td><td>Fundamentals (SS)</td><td>Linear Algebra (RV)</td><td>Tutorials</td></tr>
+                <tr><td>Wed, 09.07.25</td><td>Linear Algebra (RV)</td><td>Analysis (LS)</td><td>Fundamentals (SS)</td><td>Tutorials</td></tr>
+                <tr><td>Thu, 10.07.25</td><td>Fundamentals (SS)</td><td colspan="3">Invited Talk and Valedictory Function</td></tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <p class="schedule-note">
+            <strong>Faculty:</strong> SD - Dr Subhankar Dey, JCR - Dr Jayanarayanan C R, GK - Dr Gopikrishnan C R, LS - Dr Lakshmi Shankar K, SS - Dr Srijan Sarkar, RV - Dr Rohit Verma
+          </p>
+
+          <p class="schedule-note">
+            <strong>Teaching assistants:</strong> 
+            BT - Mr Bharathi Thiruvengdam, AG - Ms Alphonda Geoerge,
+            GS - Mr Gokul Santhosh, SG - Mr Somyajit Ghosh, 
+            ALB - Ms Aiswarya Lakshmi B, NEP - Ms Navaneetha E P, 
+            SMG - Mr Sreelal M G, PK - Mr Pawan Kumar
+        </p>
+      </section>
+      
+      <div class="section-divider"></div>
+
+      <section id="venue" class="content-section">
+        <div class="section-header">
+          <h2>Venue</h2>
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div class="venue-wrapper">
+            <div class="venue-text">
+                The Summer Training Programme in Mathematics 2025 will take place at Classroom A01-002, Saraswati Block,
+                 nestled within the Sahyadri Campus of IIT Palakkad. Participants will be accommodated in the Malhar 
+                 and Saveri hostels, just a short stroll away from the lecture venue. All dining arrangements are made at the Kedaram Central Mess. These three centres are 
+                 at a walkable distance.  <br> <br>
+
+                Set amidst the awe-inspiring Western Ghats, this serene campus transforms into a lush green haven during the monsoon — the perfect backdrop 
+                    for immersing oneself in mathematics. Dept. of Mathematics, IIT Palakkad welcomes you! 
+            </div>
+        
+            <div class="venue-box">
+              <h3>STPM 2025 – Venue Address</h3>
+              <p>Classroom A01-002<br>
+              <p>Saraswati Block<br>
+                 Sahyadri Campus,<br>
+                 Indian Institute of Technology Palakkad,<br>
+              Kanjikode Rd,<br>
+                 Palakkad, Kerala 678623</p>
+            </div>
+          </div>
+        
+          <div class="venue-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5164.172276043996!2d76.73794957504225!3d10.807050589343635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8698dc1ac206b%3A0x61fc453e96dfd865!2sSaraswati%20Block!5e1!3m2!1sen!2sin!4v1743505695351!5m2!1sen!2sin"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+      </section>
+      
+      <div class="section-divider"></div>
+      <section id="instructions" class="content-section">
+        <div class="section-header">
+          <h2>Instructions</h2>
+          <i class="fas fa-info-circle"></i>
+        </div>
+        <div class="instructions-box">
+          <ul>
+            <li>All participants are expected to attend the full duration of the programme from June 30 to July 10, 2025.</li>
+            <li>Essential stationary (notebooks, pens) etc will be supplied during Registration session.</li>
+            <li>Attendance in all lectures and tutorials is mandatory.</li>
+            <li>Participants should maintain discipline and decorum throughout the programme.</li>
+            <li>Check your <strong>registered email and this website </strong> regularly for updates and announcements.</li>
+            <li>Please bring an umbrella as monsoon rains are exptected during the session.</li>
+          </ul>
+        </div>
+      </section>
+      
+      <div class="section-divider"></div>
+      <section id="poster" class="content-section">
+        <div class="section-header">
+          <h2>Programme Poster</h2>
+          <i class="fas fa-image"></i>
+        </div>
+        <iframe class="pdf-viewer" src="STP_Poster.pdf" width="100%" height="500px" style="border: 1px solid #ccc; border-radius: 6px;"></iframe>
+        <div class="pdf-download-link">
+          <a href="STP_Poster.pdf" download class="styled-download-btn" target="_blank">📄 Download Programme Poster (PDF)</a>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+      <section id="contact" class="content-section">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-box">
+            <h3>📬 Contact Address</h3>
+            <p>
+              Department of Mathematics,<br>
+              Indian Institute of Technology Palakkad,<br>
+              Sahyadri Campus, Kanjikode,<br>
+              Palakkad, Kerala 678623<br>
+              Email: <a href="mailto:stp_math@iitpkd.ac.in">stp_math@iitpkd.ac.in</a><br>
+              Phone: +91-491-209-1400, +91-491-209-1405
+            </p>
+          </div>
+      
+          <div class="contact-box">
+            <h3>👥 Organising Committee</h3>
+            <ul>
+              <li><strong>Dr. Gopikrishnan C R </strong> – Coordinator</li>
+              <li><strong>Dr. Jayanarayanan C R</strong> – Organising Member</li>
+              <li><strong>Dr. Srijan Sarkar</strong> – Organising Member</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+  </main>
+
+  <footer style="background:#002b45; color:white; text-align:center; padding:10px;">
+    &copy; 2025 Department of Mathematics, IIT Palakkad
+  </footer>
 </div>
 
-<div id="sfcyse7b6skjwy5mpjnm144l4ghe7rqdrs1"></div>
-<script type="text/javascript" src="https://counter9.stat.ovh/private/counter.js?c=yse7b6skjwy5mpjnm144l4ghe7rqdrs1&down=async" async></script>
-<noscript><a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter9.stat.ovh/private/freecounterstat.php?c=yse7b6skjwy5mpjnm144l4ghe7rqdrs1" border="0" title="website counter" alt="website counter"></a></noscript>
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
 
-</footer>
-</div>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slideshow-box img');
+    const caption = document.getElementById('slideCaption');
+    const dotsContainer = document.getElementById('slideDots');
+    const pauseButton = document.getElementById('pauseButton');
+    const pauseIcon = pauseButton.querySelector('i');
+    const slideshowBox = document.querySelector('.slideshow-box');
+    let current = 0;
+    let interval;
+    let startX = 0;
+    let isPaused = false;
+
+    // Initialize dots
+    slides.forEach((_, index) => {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        showSlide(index);
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+        dotsContainer.children[i].classList.toggle('active', i === index);
+      });
+      caption.textContent = slides[index].getAttribute('data-caption');
+      current = index;
+    }
+
+    function nextSlide() {
+      current = (current + 1) % slides.length;
+      showSlide(current);
+    }
+
+    function prevSlide() {
+      current = (current - 1 + slides.length) % slides.length;
+      showSlide(current);
+    }
+
+    function startSlideshow() {
+      interval = setInterval(nextSlide, 3000);
+    }
+
+    pauseButton.addEventListener('click', () => {
+      if (isPaused) {
+        startSlideshow();
+        pauseIcon.classList.remove('fa-play');
+        pauseIcon.classList.add('fa-pause');
+      } else {
+        clearInterval(interval);
+        pauseIcon.classList.remove('fa-pause');
+        pauseIcon.classList.add('fa-play');
+      }
+      isPaused = !isPaused;
+    });
+
+    slideshowBox.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+    slideshowBox.addEventListener('touchend', e => {
+      const endX = e.changedTouches[0].clientX;
+      if (startX - endX > 50) nextSlide();
+      else if (endX - startX > 50) prevSlide();
+    });
+
+    showSlide(current);
+    startSlideshow();
+
+    // Make next/prev globally available for inline onclick
+    window.nextSlide = nextSlide;
+    window.prevSlide = prevSlide;
+  });
+</script>
+
+
 </body>
-
 </html>
